@@ -112,16 +112,16 @@ public class BaseClass {
 			findElement = driver.findElement(By.id(value));
 		}
 		else if(locatorName.equals("name")) {
-			findElement = driver.findElement(By.id(value));
+			findElement = driver.findElement(By.name(value));
 		}
 		else if(locatorName.equals("className")) {
-			findElement = driver.findElement(By.id(value));
+			findElement = driver.findElement(By.className(value));
 		}
 		else if(locatorName.equals("xpath")) {
-			findElement = driver.findElement(By.id(value));
+			findElement = driver.findElement(By.xpath(value));
 		}
 		else if(locatorName.equals("tagName")) {
-			findElement = driver.findElement(By.id(value));
+			findElement = driver.findElement(By.tagName(value));
 		}
 		else {
 			System.out.println("Invalid Locator");
@@ -137,16 +137,16 @@ public class BaseClass {
 			findElements = driver.findElements(By.id(value));
 		}
 		else if(locatorName.equals("name")) {
-			findElements = driver.findElements(By.id(value));
+			findElements = driver.findElements(By.name(value));
 		}
 		else if(locatorName.equals("className")) {
-			findElements = driver.findElements(By.id(value));
+			findElements = driver.findElements(By.className(value));
 		}
 		else if(locatorName.equals("xpath")) {
-			findElements = driver.findElements(By.id(value));
+			findElements = driver.findElements(By.xpath(value));
 		}
 		else if(locatorName.equals("tagName")) {
-			findElements = driver.findElements(By.id(value));
+			findElements = driver.findElements(By.tagName(value));
 		}
 		else {
 			System.out.println("Invalid Locator");
